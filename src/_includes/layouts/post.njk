@@ -1,0 +1,14 @@
+---
+templateClass: "post"
+---
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+    <section class="single">
+        <div class="inner">
+            <p><a href="{{ '/' | url }}">← Home</a></p>
+            <h1>{{ title }}</h1>
+            {{ content | safe }}
+        </div>
+    </section>
+{% endblock %}

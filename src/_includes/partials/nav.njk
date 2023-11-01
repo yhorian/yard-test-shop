@@ -1,0 +1,17 @@
+{% if site.navItems %}
+    <nav aria-label="main-navigation">
+        <ul role="menubar" class="u-flex u-align-center menu">
+            {% for item in site.navItems %}
+                <li role="menuitem" class="menu-item">
+                    <a href="{{item.url}}" class="no-underline">{{item.name}}</a>
+                </li>
+            {% endfor %}
+            <li class="menu-item menu-item-button">
+                <span class="snipcart-checkout button button--full">
+                    <span>Checkout</span>
+                    (<span class="snipcart-items-count">0</span>)
+                </span>
+            </li>
+        </ul>
+    </nav>
+{% endif %}

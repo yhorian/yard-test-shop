@@ -1,0 +1,16 @@
+.hero {
+    background: url('https://images.unsplash.com/photo-1458819714733-e5ab3d536722?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80');
+    background-size: cover;
+    background-position: 100% 60%;
+    
+    &-content {
+        position: relative;
+        width: 100%;
+        padding: 10em 0 8em;
+    }
+
+    .button {
+        margin: 2em 0;
+        text-decoration: none;
+    }
+}

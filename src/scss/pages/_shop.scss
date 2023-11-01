@@ -1,0 +1,29 @@
+.grid-wrapper {
+    h3 {
+        margin: 1em 0;
+    }
+    
+    &-title {
+        margin: 32px 0;
+    }
+
+    .grid {
+        .card {
+            flex-direction: column;
+            justify-content: space-between;
+            
+            .button {
+                align-self: flex-start
+            }
+            
+            .frame {
+                overflow: hidden;
+            }
+
+            &-title {
+                font-size: 18px;
+                font-weight: 700;
+            }
+        }
+    }
+}
